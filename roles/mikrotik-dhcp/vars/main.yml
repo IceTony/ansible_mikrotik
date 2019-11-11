@@ -1,0 +1,5 @@
+---
+
+ansible_ssh_user: "ansible"
+ansible_ssh_pass: "Admin2012"
+ansible_network_os: routeros

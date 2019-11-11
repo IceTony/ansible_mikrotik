@@ -1,0 +1,7 @@
+- name: Get Mikrotik DHCP list
+  hosts: mikrotik
+  gather_facts: no
+  connection: network_cli
+
+  roles:
+    - mikrotik-dhcp

@@ -1,0 +1,10 @@
+---
+
+- name: get dhcp list
+  routeros_command:
+    commands: /ip dhcp-server lease print
+  register: dhcp_list
+
+- name: display dhcp list
+  debug:
+    msg: "{{ dhcp_list.stdout_lines }}"
